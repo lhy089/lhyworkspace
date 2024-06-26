@@ -26,7 +26,7 @@ public class MailService {
         message.setSubject("인증 번호입니다.");
         message.setText("이메일 인증코드: "+code);
 
-        message.setFrom("hyong07@naver.com"); //보내는사람.
+        message.setFrom("hyong0701@gmail.com"); //보내는사람.
 
         return  message;
 	}

@@ -14,11 +14,11 @@ public class MailConfiguration {
 	public JavaMailSender javaMailService() {
 		JavaMailSenderImpl javaMailSender = new JavaMailSenderImpl();
 		
-		javaMailSender.setHost("smtp.naver.com");
-		javaMailSender.setUsername("hyong07@naver.com");
-		javaMailSender.setPassword("");
+		javaMailSender.setHost("smtp.gmail.com");
+		javaMailSender.setUsername("hyong0701@gmail.com");
+		javaMailSender.setPassword("nach tefr cure qbug");
 		
-		javaMailSender.setPort(465);
+		javaMailSender.setPort(587);
 		
 		javaMailSender.setJavaMailProperties(getMailProperties());
 		
@@ -31,8 +31,8 @@ public class MailConfiguration {
         properties.setProperty("mail.smtp.auth", "true");
         properties.setProperty("mail.smtp.starttls.enable", "true");
         properties.setProperty("mail.debug", "true");
-        properties.setProperty("mail.smtp.ssl.trust","smtp.naver.com");
-        properties.setProperty("mail.smtp.ssl.enable","true");
+//        properties.setProperty("mail.smtp.ssl.trust","smtp.gmail.com");
+//        properties.setProperty("mail.smtp.ssl.enable","true");
         return properties;
 	}
 

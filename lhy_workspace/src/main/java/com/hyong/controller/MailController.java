@@ -16,7 +16,7 @@ public class MailController {
 	
 	@GetMapping("/send")
 	public void mailAuthentication() throws Exception {
-		String verifyCodeId = mailService.sendCertificationMail("hyong07@naver.com");
+		String verifyCodeId = mailService.sendCertificationMail("hyong0701@gmail.com");
 		System.out.println(verifyCodeId);
 
 	}
